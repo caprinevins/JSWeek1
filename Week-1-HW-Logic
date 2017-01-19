@@ -27,29 +27,58 @@ true && true
 true
 
 false && false || true
-false 
+false && true
+true
 
 false && (false || true)
+false && (true)
+false
 
 (false && false) && false && (true || false) || false
+(false) && false && (true) || false
+false && (true) || false
+false || false
+false
 
 4 == "4"
-
+true
 
 4 == "4" || 4 == 4
+4 || 4
+true
 
 
 10 % 3 == 10.0 % 3
+/*10 / 3 = 9 plus 1*/
+1 == 1
+true
 
 
 10 * (5 / 2.0) == 10.0 * (5 / 2)
+10 * (2.5) == 10.0 * (2.5)
+25 == 25.0
 
 
 10 * 5 / 2 > 10 * (5 / 2)
+50 / 2 > 10 * (2.5)
+25 > 25
+false
 
 
 2 * 2 ** 3 == (2 * 2) ** 3
+2 * 8 == (2**3 * 2**3)
+16 == (8 * 8)
+16 == (64)
+false
 
 
 (10 - 4) < +6 || -(2 * -4) > 0
+(6) < +6 || -(-8) > 0
+(6) < 6 || 8 > 0
+false || true
+true
+
+
+
+
 
